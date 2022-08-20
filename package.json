@@ -4,11 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -20,5 +25,9 @@
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "typescript": "4.7.4"
+  },
+  "volta": {
+    "node": "16.17.0",
+    "yarn": "1.22.19"
   }
 }

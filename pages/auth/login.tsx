@@ -3,21 +3,20 @@ import Head from "next/head";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 
-const Home: NextPage = () => {
+const Login: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>ログイン</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Typography variant="h1" component="div" gutterBottom>
-        ホームページ
+        ログイン
       </Typography>
-      <Link href="/auth/login">ログインページはこちら</Link>
+      <Link href="/">戻る</Link>
     </>
   );
 };
 
-export default Home;
+export default Login;

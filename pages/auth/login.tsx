@@ -12,7 +12,7 @@ const Login: NextPage = () => {
       </Head>
 
       <Typography variant="h1" component="div" gutterBottom>
-        ログイン
+        ログイン a
       </Typography>
       <Link href="/">戻る</Link>
     </>

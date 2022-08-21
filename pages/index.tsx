@@ -15,9 +15,25 @@ const Home: NextPage = () => {
       <Typography variant="h1" component="div" gutterBottom>
         ホームページ
       </Typography>
-      <Link href="/auth/login">ログインページはこちら</Link>
-      <br/>
-      <Link href="/event/list">イベントページはこちら</Link>
+      <Link
+        href={{
+          pathname: "/auth/login/[pattern]",
+          query: { pattern: "1" },
+        }}
+      >
+        ログインページ1はこちら
+      </Link>
+      <br />
+      <Link
+        href={{
+          pathname: "/auth/login/[pattern]",
+          query: { pattern: "2" },
+        }}
+      >
+        ログインページ2はこちら
+      </Link>
+      {/* <br />
+      <Link href="/event/list">イベントページはこちら</Link> */}
     </>
   );
 };

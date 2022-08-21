@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 
-const Login: NextPage = () => {
+const Event: NextPage = () => {
   return (
     <>
       <Head>
@@ -25,4 +25,4 @@ const Login: NextPage = () => {
   );
 };
 
-export default Login;
+export default Event;

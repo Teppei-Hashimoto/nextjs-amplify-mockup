@@ -7,12 +7,18 @@ const Login: NextPage = () => {
   return (
     <>
       <Head>
-        <title>ログイン</title>
+        <title>イベント一覧</title>
         <meta name="description" content="" />
       </Head>
 
       <Typography variant="h1" component="div" gutterBottom>
-        ログイン ab
+        イベント一覧画面
+      </Typography>
+      <Typography variant="h3" component="div" gutterBottom>
+        イベント１
+      </Typography>
+      <Typography variant="h3" component="div" gutterBottom>
+        イベント2
       </Typography>
       <Link href="/">戻る</Link>
     </>

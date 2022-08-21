@@ -16,6 +16,8 @@ const Home: NextPage = () => {
         ホームページ
       </Typography>
       <Link href="/auth/login">ログインページはこちら</Link>
+      <br/>
+      <Link href="/event/list">イベントページはこちら</Link>
     </>
   );
 };

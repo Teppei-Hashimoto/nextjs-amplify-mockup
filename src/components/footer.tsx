@@ -12,9 +12,7 @@ export default function Footer() {
             padding: 2,
           }}
         >
-          <Typography>
-            Copyright © Proactive Inc. All Rights Reserved.
-          </Typography>
+          <Typography>Copyright © xxxxx Inc. All Rights Reserved.</Typography>
         </Box>
       </footer>
     </>

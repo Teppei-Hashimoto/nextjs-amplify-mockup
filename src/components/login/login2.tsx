@@ -7,6 +7,7 @@ import {
   Paper,
   Container,
 } from "@mui/material";
+import Link from "next/link";
 
 export default function Login2() {
   return (
@@ -84,9 +85,11 @@ export default function Login2() {
               <a href="">メールアドレスを忘れた場合</a>
             </Grid>
             <Grid item sx={{ paddingTop: 2, alignSelf: "end" }}>
-              <Button size="large" variant="contained">
-                ログイン
-              </Button>
+              <Link href="/event">
+                <Button size="large" variant="contained">
+                  ログイン
+                </Button>
+              </Link>
             </Grid>
           </Paper>
         </Container>

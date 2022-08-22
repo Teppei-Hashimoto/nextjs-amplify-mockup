@@ -7,6 +7,7 @@ import {
   Paper,
   Container,
 } from "@mui/material";
+import Link from "next/link";
 
 export default function Login1() {
   return (
@@ -43,6 +44,7 @@ export default function Login1() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            gap: 2,
           }}
         >
           <TextField
@@ -51,9 +53,6 @@ export default function Login1() {
             label="メールアドレス"
             variant="outlined"
             size="small"
-            sx={{
-              marginRight: 2,
-            }}
           />
           <TextField
             id="outlined-basic"
@@ -62,20 +61,13 @@ export default function Login1() {
             placeholder="パスワード"
             variant="outlined"
             size="small"
-            sx={{
-              marginRight: 2,
-            }}
           />
 
-          <Button
-            size="medium"
-            variant="contained"
-            sx={{
-              marginRight: 3,
-            }}
-          >
-            ログイン
-          </Button>
+          <Link href="/event">
+            <Button size="medium" variant="contained">
+              ログイン
+            </Button>
+          </Link>
         </Box>
       </Box>
     </>

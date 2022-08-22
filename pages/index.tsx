@@ -12,9 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Typography variant="h1" component="div" gutterBottom>
-        ホームページ
-      </Typography>
+      <Typography gutterBottom>トップページページ</Typography>
       <Link
         href={{
           pathname: "/auth/login/[pattern]",

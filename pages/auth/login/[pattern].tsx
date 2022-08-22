@@ -23,8 +23,6 @@ const Login: NextPage = () => {
         <meta name="description" content="" />
       </Head>
       {switchLoginLayout(pattern as string)}
-
-      <Link href="/">戻る</Link>
     </>
   );
 };

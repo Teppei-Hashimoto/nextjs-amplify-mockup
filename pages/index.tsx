@@ -14,6 +14,7 @@ const Home: NextPage = () => {
 
       <Typography gutterBottom>トップページ</Typography>
       <Link
+        as={`/auth/login`}
         href={{
           pathname: "/auth/login/[pattern]",
           query: { pattern: "1" },
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       </Link>
       <br />
       <Link
+        as={`/auth/login`}
         href={{
           pathname: "/auth/login/[pattern]",
           query: { pattern: "2" },
@@ -30,8 +32,6 @@ const Home: NextPage = () => {
       >
         ログインページ2はこちら
       </Link>
-      {/* <br />
-      <Link href="/event/list">イベントページはこちら</Link> */}
     </>
   );
 };

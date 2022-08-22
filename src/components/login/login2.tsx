@@ -85,7 +85,10 @@ export default function Login2() {
               <a href="">メールアドレスを忘れた場合</a>
             </Grid>
             <Grid item sx={{ paddingTop: 2, alignSelf: "end" }}>
-              <Link href="/event">
+              <Link
+                as={`/event`}
+                href={{ pathname: "/event", query: { loginLayout: 2 } }}
+              >
                 <Button size="large" variant="contained">
                   ログイン
                 </Button>

@@ -63,7 +63,10 @@ export default function Login1() {
             size="small"
           />
 
-          <Link href="/event">
+          <Link
+            as={`/event`}
+            href={{ pathname: "/event", query: { loginLayout: 1 } }}
+          >
             <Button size="medium" variant="contained">
               ログイン
             </Button>

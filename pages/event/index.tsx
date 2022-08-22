@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Typography, Box, Grid, Button } from "@mui/material";
 import Link from "next/link";
 import Layout from "../../src/components/layout";
@@ -35,6 +36,8 @@ const eventItems = [
 ];
 
 const Event: NextPage = () => {
+  const router = useRouter();
+  const { loginLayout } = router.query;
   return (
     <>
       <Head>
@@ -72,6 +75,7 @@ const Event: NextPage = () => {
                   </Typography>
                 </Box>
                 <Link
+                  as={`/event/${item.eventId}`}
                   href={{
                     pathname: "/event/[id]",
                     query: {
@@ -79,6 +83,7 @@ const Event: NextPage = () => {
                       title: item.title,
                       description: item.description,
                       url: item.contents.video,
+                      loginLayout: loginLayout,
                     },
                   }}
                 >
@@ -90,9 +95,17 @@ const Event: NextPage = () => {
             ))}
           </Grid>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Button variant="outlined" sx={{ fontWeight: "bold" }}>
-              戻る
-            </Button>
+            <Link
+              as={`/auth/login`}
+              href={{
+                pathname: `/auth/login/[pattern]`,
+                query: { pattern: loginLayout },
+              }}
+            >
+              <Button variant="outlined" sx={{ fontWeight: "bold" }}>
+                戻る
+              </Button>
+            </Link>
           </Box>
         </>
       </Layout>

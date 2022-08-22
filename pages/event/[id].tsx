@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const EventView: NextPage = () => {
   const router = useRouter();
-  const { id, title, description, url } = router.query;
+  const { id, title, description, url, loginLayout } = router.query;
   return (
     <>
       <Head>
@@ -65,7 +65,10 @@ const EventView: NextPage = () => {
               </Box>
             </Grid>
           </Grid>
-          <Link href="/event">
+          <Link
+            as={`/event`}
+            href={{ pathname: "/event", query: { loginLayout: loginLayout } }}
+          >
             <Button variant="outlined" sx={{ fontWeight: "bold" }}>
               戻る
             </Button>

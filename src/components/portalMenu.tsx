@@ -19,7 +19,7 @@ export default function PortalMenu() {
           }}
         >
           <CalendarMonthIcon />
-          <Typography sx={{ fontSize: 14 }}>Live Streaming</Typography>
+          <Typography sx={{ fontSize: 14 }}>スケジュール</Typography>
         </Paper>
         <Typography sx={{ fontSize: 20, fontWeight: "bold" }}>Menu</Typography>
         <Paper
@@ -56,10 +56,7 @@ export default function PortalMenu() {
           Notice
         </Typography>
         <Box sx={{ padding: 1, bgcolor: "white" }}>
-          <Typography sx={{ fontSize: 12, color: "red" }}>
-            ※
-            ログイン後、ブラウザの戻る・進むボタンは使用しないでください。ログアウトする場合がございます。「戻る」ないし「Topへ」をご使用ください。
-          </Typography>
+          <Typography sx={{ fontSize: 12, color: "red" }}>※ 注釈</Typography>
         </Box>
       </Paper>
     </>

@@ -30,7 +30,7 @@ export default function Login2() {
             paddingX: 2,
           }}
         >
-          <Typography sx={{ fontSize: 20 }}>Web会議システム</Typography>
+          <Typography sx={{ fontSize: 20 }}>〇〇〇〇システム</Typography>
         </Paper>
         <Container
           maxWidth="xs"

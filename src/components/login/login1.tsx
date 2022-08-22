@@ -24,7 +24,7 @@ export default function Login1() {
           position: "fixed",
         }}
       >
-        <Typography sx={{ fontSize: 20 }}>Web会議システム</Typography>
+        <Typography sx={{ fontSize: 20 }}>〇〇〇〇システム</Typography>
       </Paper>
       <Box
         sx={{
